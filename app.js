@@ -1,8 +1,8 @@
-//const { socket } = require("dgram")
 const express = require("express")
 var app = require("express")()
 var server = require("http").Server(app)
 var io=require("socket.io")
+//const { socket } = require("dgram")
 
 app.use(express.static("public"))
 server.listen(3000,()=>console.log("servidor iniciado en 3000"))
